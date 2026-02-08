@@ -4,4 +4,5 @@
 
 ## 🥟 Pragyan CTF2026
 
-* [The Epstein Files – CTF Write-up](pragyan-ctf2026/epstein_files_writeup.md)
+* [The Epstein Files – CTF\_ writeup](pragyan-ctf2026/epstein_files_writeup.md)
+* [H@rDl4u6H - CTF\_writeup](pragyan-ctf2026/h-rdl4u6h-ctf_writeup.md)
