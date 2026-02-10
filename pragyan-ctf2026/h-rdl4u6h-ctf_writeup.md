@@ -287,10 +287,10 @@ Enhancing : <br>
 Interpreting the poem&#x20;
 
 * "Start at the eastern rim" → 3 o'clock position (rightmost)
-* "Eight measured steps counter-clockwise" → move 8 positions (of 16) counter-clockwise = 180°
-* "Mirrored chorus" → the opposite half is redundant/mirrored
-* "Dark for the answer, and bright for the no" → dark = 1, bright/dot = 0 (binary convention described by poem)
-* "Read from innermost to outermost" → ring 1 → ring 21
+* "Eight measured steps counter-clockwise" → move 8 positions (of 16) counter-clockwise = 180° ( no need for the full 360 circle , you read the 180° /8 = 22.5° )
+* "Mirrored chorus" → the opposite half is redundant/mirrored (You only need one  half)
+* "Dark for the answer, and bright for the no" → dark = 1, bright/dot = 0 (binary convention described by poem)&#x20;
+* "Read from innermost to outermost" → ring 1 → ring 21 ( i mean you can go from the other away around you will still get the flag no matter what)
 
 Luckily, I didn’t have to figure all of this out on my own… we got a little help from an AI agent.
 
@@ -303,6 +303,8 @@ You can do this manually (YEAH COUNT THEM BY HAND) or use a script or an AI tool
 ```
 
 (21 bytes of hex.)
+
+
 
 ***
 
