@@ -13,3 +13,4 @@
 - [penguin — CTF writeup](ehax-ctf/Penguin_writeup.md)
 - [idinahui — CTF writeup](ehax-ctf/idinahui_writeup.md)
 - [date_spot — CTF writeup](ehax-ctf/date_spot.md)
+- [#808080 — CTF writeup](ehax-ctf/#808080.md)
