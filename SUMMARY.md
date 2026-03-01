@@ -8,3 +8,4 @@
 ## 👻 EHAX CTF
 * [painter — CTF writeup](ehax-ctf/PAINTER_writeup.md)
 * [penguin — CTF writeup](ehax-ctf/Penguin_writeup.md)
+* [idinahui — CTF writeup](ehax-ctf/idinahui_writeup.md)
