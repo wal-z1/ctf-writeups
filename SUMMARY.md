@@ -6,7 +6,7 @@
 * [H@rDl4u6H - CTF\_writeup](pragyan-ctf2026/h-rdl4u6h-ctf_writeup.md)
 
 ## 👻 EHAX CTF
-* [#808080 — CTF writeup](ehax-ctf/#808080.md)
+* [#808080 — CTF writeup](ehax-ctf/808080.md)
 * [date_spot — CTF writeup](ehax-ctf/date_spot.md)
 * [painter — CTF writeup](ehax-ctf/PAINTER_writeup.md)
 * [penguin — CTF writeup](ehax-ctf/Penguin_writeup.md)
