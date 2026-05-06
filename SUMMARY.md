@@ -18,3 +18,7 @@
 ## 🧩 UDCtf 2026
 
 - [2d to 3d - ctf writeup](udctf-2026/2d_to_3d.md)
+
+## 🌐 MCTF 5.0 2026
+
+- [Jobless2_Write-up writeup](MCTF-5.0-2026/Jobless2_Write-up.md)
