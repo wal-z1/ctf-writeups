@@ -124,7 +124,7 @@ this isn't a malware-analysis challenge.
 
 ## Step 5
 
-```bash
+````bash
 python3 ./volatility3/vol.py -f handout.dmp windows.info
 python3 ./volatility3/vol.py -f handout.dmp windows.pslist
 python3 ./volatility3/vol.py -f handout.dmp windows.crashinfo
@@ -141,9 +141,9 @@ No actionable output. This isn't Volatility's fault. It's the wrong tool for thi
 
 Here's where things shift. List the modules embedded in the MiniDump:
 
-![Screenshot: Volatility 3 failing to process handout.dmp or returning empty plugin output](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/07_volatility_fail.png)
+```bash
 python3 -m minidump --modules handout.dmp
-```
+````
 
 ```
 C:\Windows\System32\lsass.exe
