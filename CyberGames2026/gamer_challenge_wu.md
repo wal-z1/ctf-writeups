@@ -117,7 +117,7 @@ pw for my file:
 N6bVJjF4BqTeWW7wNKnAHJxc2r2jpLgcMxXEvH34yDKtXBw8wmLS%CsFpNYTMCfkFy8#m&9nVtox4#^7w2CNQUxRw!8w!7wyaDQ5vBi^8Cemy
 ```
 
-![Screenshot: Steam profile summary showing the password text](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/06_steam_password_placeholder.png)
+![Screenshot: Steam profile summary showing the password text](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/05_steam_profile_placeholder.png)
 
 That line changes the direction of the investigation.
 This is not just gaming activity anymore.
