@@ -315,18 +315,14 @@ SK-CERT{B3_4w4r3_0F_1n51D3Rz_PlzzzZ}
 
 ## Tools Used
 
-`minidump` - MiniDump header, sysinfo, and module parsing
-`strings` - Raw ASCII and UTF-16LE extraction
-`grep` - Pattern filtering
-`Volatility 3` - Full memory analysis attempt (incompatible with MiniDump)
-`pypykatz` - Automated LSASS credential parsing
-`decrypt_dpapi.py` / `decrypt_blob.py` - Custom DPAPI blob carving and parsing
-`WinDBG x64` - Native debugger for MiniDump analysis
-`mimilib.dll` - Mimikatz native WinDBG extension
-`7-Zip` - Archive extraction
+- `minidump` - MiniDump header, sysinfo, and module parsing
+- `strings` - Raw ASCII and UTF-16LE extraction
+- `grep` - Pattern filtering
+- `Volatility 3` - Full memory analysis attempt (incompatible with MiniDump)
+- `pypykatz` - Automated LSASS credential parsing
+- `decrypt_dpapi.py` / `decrypt_blob.py` - Custom DPAPI blob carving and parsing
+- `WinDBG x64` - Native debugger for MiniDump analysis
+- `mimilib.dll` - Mimikatz native WinDBG extension
+- `7-Zip` - Archive extraction
 
 Mimikatz project: https://github.com/gentilkiwi/mimikatz
-
-```
-
-```
