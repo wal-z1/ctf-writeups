@@ -25,4 +25,5 @@
 
 ## 🛡️ CyberGames 2026
 
+- [Gamer Challenge — CTF writeup](CyberGames2026/gamer_challenge_wu.md)
 - [Insider Challenge — CTF writeup](CyberGames2026/insider_challenge_writeup.md)
