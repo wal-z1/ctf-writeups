@@ -2,11 +2,6 @@
 
 - [ctf-writeups](README.md)
 
-## 🥟 Pragyan CTF2026
-
-- [The Epstein Files – CTF\_ writeup](pragyan-ctf2026/epstein_files_writeup.md)
-- [H@rDl4u6H - CTF_writeup](pragyan-ctf2026/h-rdl4u6h-ctf_writeup.md)
-
 ## 👻 EHAX CTF
 
 - [#808080 — CTF writeup](ehax-ctf/808080.md)
@@ -14,6 +9,11 @@
 - [painter — CTF writeup](ehax-ctf/PAINTER_writeup.md)
 - [penguin — CTF writeup](ehax-ctf/Penguin_writeup.md)
 - [idinahui — CTF writeup](ehax-ctf/idinahui_writeup.md)
+
+## 🥟 Pragyan CTF2026
+
+- [The Epstein Files – CTF writeup](pragyan-ctf2026/epstein_files_writeup.md)
+- [H@rDl4u6H - CTF writeup](pragyan-ctf2026/h-rdl4u6h-ctf_writeup.md)
 
 ## 🧩 UDCtf 2026
 

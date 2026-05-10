@@ -1,9 +1,8 @@
-# Jobless 2
+# 🗣️ Jobless2\_Write-up
 
-**Category:** OSINT
-**Flag:** `mctf{LARGO-1995_DANIELLE-GRAEF_83_THE-ZOHAN_22/03/2006_ZZ9}`
+**Category:** OSINT **Flag:** `mctf{LARGO-1995_DANIELLE-GRAEF_83_THE-ZOHAN_22/03/2006_ZZ9}`
 
----
+***
 
 **Challenge description:**
 
@@ -17,7 +16,7 @@
 >
 > The flag is all in Uppercase, put "\_" between parts and "-" inside parts if they contain more than 1 word.
 >
-> Example: mctf{CHICAGO-2007_STAY-HERE_60_TOY-STORY_30/04/2026_ABC}
+> Example: mctf{CHICAGO-2007\_STAY-HERE\_60\_TOY-STORY\_30/04/2026\_ABC}
 
 The challenge also ships with a downloadable attachment called `bridge.png`.
 
@@ -25,11 +24,11 @@ It is a photo of a wooden boardwalk cutting through beach grass and leading stra
 
 ![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/image3.png)
 
----
+***
 
 **Tools used:** Google Maps, theresumestore.com, Flickr, LinkedIn, Twitter, Instagram, Facebook, Blogger, WordPress, Truthfinder, Trustpilot, Google Search.
 
----
+***
 
 This challenge is a direct continuation of Jobless 1. The final step of Jobless 1 is finding a Google Maps listing for a place called **Get A Job Manual**, dropped at coordinates somewhere in the middle of the Pacific Ocean.
 
@@ -39,7 +38,7 @@ that website is the bridge between the two challenges and it is where everything
 
 ![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/image4.png)
 
-The [Maps listing](https://www.google.com/maps/place/Get+A+Job+Manual/@48.6170322,-153.3785226,15016180m/data=!3m1!1e3!4m18!1m9!3m8!1s0x88c2f122c487f231:0x70a74d6ae55c63b2!2sGet+A+Job+Manual!8m2!3d46.423669!4d-129.9427086!9m1!1b1!16s%2Fg%2F11h4w9sk47!3m7!1s0x88c2f122c487f231:0x70a74d6ae55c63b2!8m2!3d46.423669!4d-129.9427086!9m1!1b1!16s%2Fg%2F11h4w9sk47?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D) itself shows a few details worth noting.
+The [Maps listing](https://www.google.com/maps/place/Get+A+Job+Manual/@48.6170322,-153.3785226,15016180m/data=!3m1!1e3!4m18!1m9!3m8!1s0x88c2f122c487f231:0x70a74d6ae55c63b2!2sGet+A+Job+Manual!8m2!3d46.423669!4d-129.9427086!9m1!1b1!16s%2Fg%2F11h4w9sk47!3m7!1s0x88c2f122c487f231:0x70a74d6ae55c63b2!8m2!3d46.423669!4d-129.9427086!9m1!1b1!16s%2Fg%2F11h4w9sk47?entry=ttu\&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D) itself shows a few details worth noting.
 
 The place is categorized as a "Resume service" with a 5.0 rating from four reviews.
 
@@ -47,14 +46,13 @@ The website link is theresumestore.com and the phone number listed is +1 727-219
 
 Two images are attached to the listing, a woman in professional attire posing for a headshot-style photo. There is nothing else of value in the listing itself. The website is what matters.
 
----
+***
 
 **Opening the website**
 
 ![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/image%209.png)
 
-The first time you load [theresumestore.com](https://theresumestore.com/) you are greeted with what can only be described as an aggressive amount of text.
-The homepage is long and dense, pushing the idea that Arnold is the best resume writer in Florida. He claims that 85% of clients he writes resumes for go on to get job interviews. There are sections with statistics, bullet-pointed benefits of hiring a professional resume writer and multiple video embeds that are supposed to be testimonials.
+The first time you load [theresumestore.com](https://theresumestore.com/) you are greeted with what can only be described as an aggressive amount of text. The homepage is long and dense, pushing the idea that Arnold is the best resume writer in Florida. He claims that 85% of clients he writes resumes for go on to get job interviews. There are sections with statistics, bullet-pointed benefits of hiring a professional resume writer and multiple video embeds that are supposed to be testimonials.
 
 Reading through the content it is pretty clear that most of the body text is AI-generated.
 
@@ -70,34 +68,29 @@ At this point we had Part 1. The city is Largo, the year is 1995. Both are state
 
 **Part 1 answer: `LARGO-1995`**
 
----
+***
 
 **Going through the social media accounts**
 
 We opened all four accounts at the same time and started going through them in parallel.
 
-The **[Twitter](https://twitter.com/StoreResume)** account (@StoreResume) is fairly inactive. Most of the posts are links back to the website or short generic career tips along the lines of "make sure your resume has a strong summary section" and "keywords matter more than you think."
+The [**Twitter**](https://twitter.com/StoreResume) account (@StoreResume) is fairly inactive. Most of the posts are links back to the website or short generic career tips along the lines of "make sure your resume has a strong summary section" and "keywords matter more than you think."
 
 There are no personal posts, no photos of Arnold, no mentions of anyone else. It reads like a feed that was set up to look active but nobody really uses. We scrolled to the bottom. Nothing useful.
 
 ![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/twitter.png)
 
-The **[Instagram](https://www.instagram.com/theresumestore/)** account (@theresumestore) is more active but in the same vein.
+The [**Instagram**](https://www.instagram.com/theresumestore/) account (@theresumestore) is more active but in the same vein.
 
-The **[Facebook](https://web.facebook.com/TRSResumes/)** account (TRSResumes) was similar. Business-focused content, links to the website, some longer posts about resume trends.
-We scrolled through the entire timeline. A few posts had photos attached but they were all stock images or the some AI-generated posts.
+The [**Facebook**](https://web.facebook.com/TRSResumes/) account (TRSResumes) was similar. Business-focused content, links to the website, some longer posts about resume trends. We scrolled through the entire timeline. A few posts had photos attached but they were all stock images or the some AI-generated posts.
 
 No bridge photo, no personal images, no mention of any employees or collaborators.
 
 ![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/fb.png)
 
-The **[LinkedIn](https://www.linkedin.com/in/theresumestore/)** account had a bit more substance.
-The profile listed the business as a small company with around 2 employees operating in the career coaching and resume writing space.
-Arnold's own LinkedIn shows his experience going back to the 1990s. There is a recommendations section with a few clients saying positive things and a skills section listing resume writing, career coaching and LinkedIn optimization.
-Nothing here solved any of the remaining parts on its own but we noted the employee count and kept it in mind for Part 2.
-![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/linkedin.png)
+The [**LinkedIn**](https://www.linkedin.com/in/theresumestore/) account had a bit more substance. The profile listed the business as a small company with around 2 employees operating in the career coaching and resume writing space. Arnold's own LinkedIn shows his experience going back to the 1990s. There is a recommendations section with a few clients saying positive things and a skills section listing resume writing, career coaching and LinkedIn optimization. Nothing here solved any of the remaining parts on its own but we noted the employee count and kept it in mind for Part 2. ![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/linkedin.png)
 
----
+***
 
 **Part 2 — finding who works with him**
 
@@ -127,17 +120,15 @@ LinkedIn: [Danielle Graef](https://www.linkedin.com/in/danielle-graef-financial-
 
 Later on we also cross-checked by going directly to the [Resume Store people section on LinkedIn](https://www.linkedin.com/company/the-resume-store/people/)
 
-The people section listed her under the company right alongside Arnold, which gave us a second confirmation she was the right answer.
-![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/Untitledlinkedin.png)
-**Part 2 answer: `DANIELLE-GRAEF`**
+The people section listed her under the company right alongside Arnold, which gave us a second confirmation she was the right answer. ![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/Untitledlinkedin.png) **Part 2 answer: `DANIELLE-GRAEF`**
 
----
+***
 
 **Part 3 — his age**
 
 We turned to public people-search databases. Florida has relatively open voter registration records and several third-party directories aggregate that data.
 
-Searching for Arnold Sherr in Largo, Florida on [Truthfinder](https://www.truthfinder.com/report-review/?utm_source=WXAB&traffic%5Bsource%5D=WXAB&utm_medium=affiliate&traffic%5Bmedium%5D=affiliate&utm_campaign=FL&traffic%5Bcampaign%5D=record%3AFL&utm_term=more_about&traffic%5Bterm%5D=more_about&utm_content=driving-records&traffic%5Bcontent%5D=driving-records&s1=FL&s2=record&s3=more_about&s4=driving-records&s5=&traffic%5Bfunnel%5D=bg&ck_rsid=4006457186&firstName=Arnold&lastName=Sherr&city=Largo&state=FL&age=83&tcg_id=1151362b-7369-4253-b275-998142e772d5&transaction_id=f1a9089a-5a60-465e-aeec-26cfc2799c96&index=1&bestResult=false&intent=curiosity) returned a detailed entry:
+Searching for Arnold Sherr in Largo, Florida on [Truthfinder](https://www.truthfinder.com/report-review/?utm_source=WXAB\&traffic%5Bsource%5D=WXAB\&utm_medium=affiliate\&traffic%5Bmedium%5D=affiliate\&utm_campaign=FL\&traffic%5Bcampaign%5D=record%3AFL\&utm_term=more_about\&traffic%5Bterm%5D=more_about\&utm_content=driving-records\&traffic%5Bcontent%5D=driving-records\&s1=FL\&s2=record\&s3=more_about\&s4=driving-records\&s5=\&traffic%5Bfunnel%5D=bg\&ck_rsid=4006457186\&firstName=Arnold\&lastName=Sherr\&city=Largo\&state=FL\&age=83\&tcg_id=1151362b-7369-4253-b275-998142e772d5\&transaction_id=f1a9089a-5a60-465e-aeec-26cfc2799c96\&index=1\&bestResult=false\&intent=curiosity) returned a detailed entry:
 
 ![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/image6.png)
 
@@ -147,7 +138,7 @@ This matches the Largo address we already had from the website. Age 83, born 194
 
 **Part 3 answer: `83`**
 
----
+***
 
 **Part 4 — his favorite movie**
 
@@ -179,12 +170,11 @@ He starts by accidentally listing news anchors then corrects himself and names T
 
 **Part 4 answer: `THE-ZOHAN`**
 
----
+***
 
 **Part 5 — date the photo was taken**
 
-We needed to find the original source of `bridge.png` to get the date it was taken. The image is a wooden boardwalk leading toward a beach, the kind of shot someone takes on a walk, a personal photo rather than a stock image.
-![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/bridge.png)
+We needed to find the original source of `bridge.png` to get the date it was taken. The image is a wooden boardwalk leading toward a beach, the kind of shot someone takes on a walk, a personal photo rather than a stock image. ![](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/bridge.png)
 
 The next step was reverse image searching. We ran the image through a few tools. The results were not great, similar beach boardwalk photos came up but nothing that matched exactly. We did not find a clean direct match through that method.
 
@@ -200,14 +190,13 @@ The Flickr metadata shows the photo was taken on **March 22, 2006**.
 
 **Part 5 answer: `22/03/2006`**
 
----
+***
 
 **Part 6 — license plate**
 
 This was the last remaining piece and the one that took the longest with the least obvious path.
 
-Florida license plate data is not publicly searchable through any normal channel.
-There was no plate visible anywhere in the photos we had, not in the bridge photo, not in the rest of the Flickr gallery, not in any image on Instagram or Facebook.
+Florida license plate data is not publicly searchable through any normal channel. There was no plate visible anywhere in the photos we had, not in the bridge photo, not in the rest of the Flickr gallery, not in any image on Instagram or Facebook.
 
 We went back through the Flickr account more carefully, looking at every photo in the gallery to see if any of them had a car or a plate visible in the frame. There were a few outdoor shots, some interior photos, nothing with a readable plate.
 
@@ -225,7 +214,7 @@ Trustpilot link: [Tommy's Express reviews](https://www.trustpilot.com/review/tom
 
 **Part 6 answer: `ZZ9`**
 
----
+***
 
 **Flag**
 
@@ -233,22 +222,22 @@ Trustpilot link: [Tommy's Express reviews](https://www.trustpilot.com/review/tom
 mctf{LARGO-1995_DANIELLE-GRAEF_83_THE-ZOHAN_22/03/2006_ZZ9}
 ```
 
----
+***
 
 **References**
 
-- [Get A Job Manual — Google Maps](https://www.google.com/maps/place/Get+A+Job+Manual/@48.6170322,-153.3785226,15016180m/data=!3m1!1e3!4m18!1m9!3m8!1s0x88c2f122c487f231:0x70a74d6ae55c63b2!2sGet+A+Job+Manual!8m2!3d46.423669!4d-129.9427086!9m1!1b1!16s%2Fg%2F11h4w9sk47!3m7!1s0x88c2f122c487f231:0x70a74d6ae55c63b2!8m2!3d46.423669!4d-129.9427086!9m1!1b1!16s%2Fg%2F11h4w9sk47?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D)
-- [theresumestore.com](https://theresumestore.com/)
-- [The Resume Store — LinkedIn](https://www.linkedin.com/in/theresumestore/)
-- [The Resume Store — Twitter](https://twitter.com/StoreResume)
-- [The Resume Store — Instagram](https://www.instagram.com/theresumestore/)
-- [The Resume Store — Facebook](https://web.facebook.com/TRSResumes/)
-- [The Resume Store — WordPress blog](https://theresumestore.wordpress.com/)
-- [Arnold Sherr — Flickr account](https://www.flickr.com/photos/sherrent/)
-- [Arnold Sherr — Flickr bridge photo](https://www.flickr.com/photos/sherrent/3143192750/)
-- [Arnold Sherr — Blogger profile](https://www.blogger.com/profile/10356161715111330278)
-- [Arnold Sherr — Truthfinder listing](https://www.truthfinder.com/report-review/?utm_source=WXAB&traffic%5Bsource%5D=WXAB&utm_medium=affiliate&traffic%5Bmedium%5D=affiliate&utm_campaign=FL&traffic%5Bcampaign%5D=record%3AFL&utm_term=more_about&traffic%5Bterm%5D=more_about&utm_content=driving-records&traffic%5Bcontent%5D=driving-records&s1=FL&s2=record&s3=more_about&s4=driving-records&s5=&traffic%5Bfunnel%5D=bg&ck_rsid=4006457186&firstName=Arnold&lastName=Sherr&city=Largo&state=FL&age=83&tcg_id=1151362b-7369-4253-b275-998142e772d5&transaction_id=f1a9089a-5a60-465e-aeec-26cfc2799c96&index=1&bestResult=false&intent=curiosity)
-- [Cumberland Farms — encyclopedia.com](https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/cumberland-farms-inc)
-- [Danielle Graef — LinkedIn](https://www.linkedin.com/in/danielle-graef-financial-csr/)
-- [Tommy's Express — Ratelivo](https://ratelivo.com/businesses/tommys-express.com)
-- [Tommy's Express — Trustpilot](https://www.trustpilot.com/review/tommys-express.com?stars=1)
+* [Get A Job Manual — Google Maps](https://www.google.com/maps/place/Get+A+Job+Manual/@48.6170322,-153.3785226,15016180m/data=!3m1!1e3!4m18!1m9!3m8!1s0x88c2f122c487f231:0x70a74d6ae55c63b2!2sGet+A+Job+Manual!8m2!3d46.423669!4d-129.9427086!9m1!1b1!16s%2Fg%2F11h4w9sk47!3m7!1s0x88c2f122c487f231:0x70a74d6ae55c63b2!8m2!3d46.423669!4d-129.9427086!9m1!1b1!16s%2Fg%2F11h4w9sk47?entry=ttu\&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D)
+* [theresumestore.com](https://theresumestore.com/)
+* [The Resume Store — LinkedIn](https://www.linkedin.com/in/theresumestore/)
+* [The Resume Store — Twitter](https://twitter.com/StoreResume)
+* [The Resume Store — Instagram](https://www.instagram.com/theresumestore/)
+* [The Resume Store — Facebook](https://web.facebook.com/TRSResumes/)
+* [The Resume Store — WordPress blog](https://theresumestore.wordpress.com/)
+* [Arnold Sherr — Flickr account](https://www.flickr.com/photos/sherrent/)
+* [Arnold Sherr — Flickr bridge photo](https://www.flickr.com/photos/sherrent/3143192750/)
+* [Arnold Sherr — Blogger profile](https://www.blogger.com/profile/10356161715111330278)
+* [Arnold Sherr — Truthfinder listing](https://www.truthfinder.com/report-review/?utm_source=WXAB\&traffic%5Bsource%5D=WXAB\&utm_medium=affiliate\&traffic%5Bmedium%5D=affiliate\&utm_campaign=FL\&traffic%5Bcampaign%5D=record%3AFL\&utm_term=more_about\&traffic%5Bterm%5D=more_about\&utm_content=driving-records\&traffic%5Bcontent%5D=driving-records\&s1=FL\&s2=record\&s3=more_about\&s4=driving-records\&s5=\&traffic%5Bfunnel%5D=bg\&ck_rsid=4006457186\&firstName=Arnold\&lastName=Sherr\&city=Largo\&state=FL\&age=83\&tcg_id=1151362b-7369-4253-b275-998142e772d5\&transaction_id=f1a9089a-5a60-465e-aeec-26cfc2799c96\&index=1\&bestResult=false\&intent=curiosity)
+* [Cumberland Farms — encyclopedia.com](https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/cumberland-farms-inc)
+* [Danielle Graef — LinkedIn](https://www.linkedin.com/in/danielle-graef-financial-csr/)
+* [Tommy's Express — Ratelivo](https://ratelivo.com/businesses/tommys-express.com)
+* [Tommy's Express — Trustpilot](https://www.trustpilot.com/review/tommys-express.com?stars=1)
