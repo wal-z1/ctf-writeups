@@ -5,7 +5,7 @@
 
 ---
 
-## description
+## Description
 
 Peter, a disgruntled ex-employee, encrypted `financial_secrets.txt` before walking out the door. He left behind a password-protected archive and took the password with him. Or so he thought.
 
@@ -13,7 +13,7 @@ The challenge hands you two files: `encrypted.7z` and `handout.dmp`. The passwor
 
 ---
 
-## step 1
+## Step 1
 
 Before touching any tool ... you need to know what you're actually dealing with.
 A `.dmp` file could be a crash dump, a full memory image, or a process snapshot.
@@ -55,7 +55,7 @@ Windows 10 22H2, 64-bit. Noted  ... which process got dumped?
 
 ---
 
-## step 2
+## Step 2
 
 Quick triage first. Run `strings` across the dump and grep for anything obvious.
 
@@ -82,7 +82,7 @@ DLL paths, registry fragments, authentication package names, binary data that ha
 
 ---
 
-## step 3
+## Step 3
 
 Maybe Peter ran 7-Zip from a shell. If he typed something like:
 
@@ -105,7 +105,7 @@ Nothing. No `-p` switch, no command line, no trace of archive creation. A reason
 
 ---
 
-## step 4
+## Step 4
 
 Run the dump through a file-analysis scanner.
 The output file comes back loaded with threat-intelligence-style data: extracted file objects, registry keys, packed-file indicators, URLs, Windows security references.
@@ -122,7 +122,7 @@ this isn't a malware-analysis challenge.
 
 ---
 
-## step 5
+## Step 5
 
 ```bash
 python3 ./volatility3/vol.py -f handout.dmp windows.info
@@ -137,7 +137,7 @@ No actionable output. This isn't Volatility's fault. It's the wrong tool for thi
 
 ---
 
-## step 6
+## Step 6
 
 Here's where things shift. List the modules embedded in the MiniDump:
 
@@ -165,7 +165,7 @@ Peter's Windows password may be the archive password
 
 ---
 
-## step 7
+## Step 7
 
 With LSASS confirmed, `pypykatz` is the natural next move. It's built specifically to parse LSASS dumps and extract credential material.
 
@@ -200,7 +200,7 @@ That's the main trap in this challenge.
 
 ---
 
-## step 8
+## Step 8
 now we use the correct tool ... well after enough search online i found out i can use windbg for this challenge
 
 WinDBG is Microsoft's own debugger.
@@ -218,7 +218,7 @@ Open WinDBG, load the dump, and try calling `!mimikatz` before loading the exten
 
 ---
 
-## step 9
+## Step 9
 
 Open `handout.dmp` in WinDBG x64:
 
@@ -260,7 +260,7 @@ WinDBG extension
 
 ![Screenshot: WinDBG after .load mimilib.dll showing the Mimikatz extension banner](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/15_mimilib_loaded.png)
 
-## step 10
+## Step 10
 
 Run the credential extraction command from the WinDBG prompt:
 
@@ -292,7 +292,7 @@ Save the full session output to `mimikatz_dump_output_1024_2026-03-04_22-06-53-7
 
 ---
 
-## step 11
+## Step 11
 
 Use the recovered password to extract the archive:
 
@@ -312,7 +312,7 @@ Enter the password when prompted:
 
 ![Screenshot: financial_secrets.txt opened showing the flag line](https://raw.githubusercontent.com/wal-z1/ctf-writeups/main/.gitbook/assets/18_flag.png)
 
-## step 12
+## Step 12
 
 Open `financial_secrets.txt`. The flag is in the pending transactions section.
 
@@ -324,7 +324,7 @@ SK-CERT{B3_4w4r3_0F_1n51D3Rz_PlzzzZ}
 
 ---
 
-## tools used
+## Tools Used
 
 `minidump` - MiniDump header, sysinfo, and module parsing
 `strings` - Raw ASCII and UTF-16LE extraction

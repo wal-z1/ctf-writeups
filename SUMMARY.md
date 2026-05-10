@@ -23,6 +23,6 @@
 
 - [Jobless2_Write-up writeup](MCTF-5.0-2026/Jobless2_Write-up.md)
 
-## CyberGames2026
+## 🛡️ CyberGames 2026
 
-- [Insider Challenge - CTF writeup](CyberGames2026/insider_challenge_writeup.md)
+- [Insider Challenge — CTF writeup](CyberGames2026/insider_challenge_writeup.md)
