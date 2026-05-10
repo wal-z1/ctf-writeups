@@ -171,15 +171,14 @@ With LSASS confirmed, `pypykatz` is the natural next move. It's built specifical
 
 ```bash
 pypykatz lsa minidump handout.dmp
+```
 
 It finds Peter's session immediately:
 
-````
-
+```
 username: Peter
 domainname: DESKTOP-JG8RDKF
 sid: S-1-5-21-651026828-2995092438-3424030943-1002
-
 ```
 
 It also pulls real authentication material: NT hash, SHA1 hash, DPAPI masterkey, logon session identifiers, DPAPI key GUIDs. All of that gets saved to `pypykatz.json`.
@@ -337,3 +336,4 @@ SK-CERT{B3_4w4r3_0F_1n51D3Rz_PlzzzZ}
 `7-Zip` - Archive extraction
 
 Mimikatz project: https://github.com/gentilkiwi/mimikatz
+````
